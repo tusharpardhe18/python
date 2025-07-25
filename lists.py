@@ -14,7 +14,7 @@ L1[1] #9
 # L1[70] #error
 L1[0:2] #[7,9] -> list slicing 
 
-friends = ["Apple", "Orange", 5, 345.06, False, "Aaskash", "Rohan"]
+friends = ["Apple", "Orange", 5, 345.06, False, "Aakash", "Rohan"]
 
 print(friends[0])
 friends[0] = "Grapes" # unline strings, lists are mutable
@@ -35,19 +35,17 @@ L1 = [1,8,7,2,21,15]
 - L1.remove(21): this will remove 21 fromt he list
 
 '''
+friends.append("Tushar")
+# print(friends)
 
-# Tuples
-'''
-the tuple in an immutable data type in python
-a = () -> empty table
-a = (1, ) -> tuple with only one element needs a comma
-a = (1,7,2) -> tuple with more than one element
+friends.reverse()
+# print(friends)
 
-'''
+friends.insert(4,True)
+# print(friends)
 
-# Tuple Methods
-'''
-Consider the following tuple.
+friends.pop(1)
+# print(friends)
 
-
-'''
+friends.remove("Aakash")
+# print(friends)
