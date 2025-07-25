@@ -20,7 +20,7 @@ Consider the following list:
 L1 = [1,8,7,2,21,15]
 
 - L1.sort(): update the list to [1,2,7,8,15,21]
-- L1.reverse(): updates the list to ```[15,21,2,7,8,1]```
+- L1.reverse(): updates the list to [15,21,2,7,8,1]
 - L1. append
 
 
