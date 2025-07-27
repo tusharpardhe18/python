@@ -88,8 +88,173 @@
 
 # count how many uppercase and lowercase letters are in a given string
 
-w = "Hello"
+# w = "Hello"
+# up = 0
+# low = 0
 
+# for char in w:
+#     if char.isupper():
+#         up+=1
+#     elif char.islower():
+#         low+=1
+# print(f"Uppercase: {up}, Lowercase: {low}")
 
+# print the index of each vowel in a given word
+
+# w = "Hello"
+# vowel = "aeiouAEIOU"
+# print(w)
+# for char in w:
+#     if char in vowel:
+#         print(f"Index of {char} is {w.index(char)}")
+
+# remove all digits from a string
+# input = "a1b2c3"
+# output = "abc"
+
+# s = "a1b2c3"
+# num = "0123456789"
+# output = ""
+
+# for char in s:
+#     if char not in num:
+#         output += char
+# print(output)
+
+# create a new list containing the sqaure of all even numbers from a existing list
+
+# l = [1,2,3,4,5,6,7,8,9,10]
+# ls = []
+
+# for i in l:
+#     if i%2==0:
+#         ls.append(i*i)
+
+# print(ls)
+
+# ask the user for 5 numbers and store them in a list using a loop, then print their avg
+
+# l = []
+
+# for i in range(5):
+#     l.append(int(input("Enter a number: ")))
+
+# avg = sum(l)/len(l)
+# print(avg)
+
+# print the pattern
+# 1
+# 12
+# 123
+# 1234
+
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         print(j,end="") # end="" prints on the same line
+#     print() # for new line
+
+# for n=5, print
+# *****
+# ****
+# ***
+# **
+# *
+
+# n=5
+# for i in range(n,0,-1):
+#     print("*"*i)
+
+# Floyd’s Triangle (for n = 4):
+
+# 1
+# 2 3
+# 4 5 6
+# 7 8 9 10
+
+# n=4
+# num=0
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         num+=1
+#         print(num,end=" ")
+#     print()
+
+# print 
+#    *   
+#   ***  
+#  ***** 
+# *******
+
+# n=1
+# for i in range(1, n + 1):
+#     print(" " * (n - i), end="")
+#     print("*" * (2 * i - 1))
+
+# print
+# *****
+# *   *
+# *   *
+# *****
+
+# rows = 4
+# cols = 5
+
+# for i in range(rows):
+#     if i==0 or i==rows-1:
+#         print("*"*cols)
+#     else:
+#         print("*"+" "*(cols-2)+"*")
+
+# check if a number is palindrome or not(same forwards & backwards)
+
+# n = int(input("Enter a number: "))
+# value = n
+# r = 0
+
+# while n != 0:
+#     digit = n%10
+#     r = r*10 + digit
+#     n = n // 10
+
+# if value==r:
+#     print("palindrome")
+# else:
+#     print("not a palindrome")
+
+# check if a number is prime or not
+
+# n = int(input("Enter a number: "))
+
+# if n <= 1:
+#     print("not a prime")
+# else:
+#     for i in range(2, int(n*0.5)+1):
+#         if n % i == 0:
+#             print("not a prime")
+#             break
+#     print("prime")
+
+# find the GCD (HCF) of two numbers using a loop.
+
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+
+# while b!=0:
+#     a,b = b, a%b
+# print("HCF is",a)
+
+# fibonnaci series
+# a = int(input("Enter number: "))
+a=10
+f=0
+s=1
+for i in range(0,a):
+    if i<=1:
+        next = i
+    else:
+        next = f+s
+        f=s
+        s=next
+    print(next,end=" ")
 
 
