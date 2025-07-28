@@ -74,4 +74,19 @@ f()
 print(x) # 20
 # avoid modifying globals—pass variables as arguments instead.
 
+# Optional (But Powerful) Function Tools
+
+# *args → Variable-length arguments
+def add_all(*nums):
+    return sum(nums)
+
+print(add_all(1, 2, 3, 4))  # 10
+
+# **kwargs → Variable-length keyword arguments
+def profile(**info):
+    for k, v in info.items():
+        print(k, v)
+
+profile(name="Tushar", age=22)
+
 
