@@ -7,6 +7,20 @@ del s1
 
 '''
 
+# Static Methods :
+'''
+Methods that don't use self parameter (work at class level)
+'''
+class Student:
+    @staticmethod # decorator
+    def college():
+        print("LPU")
+
+# decorators allow us to wrap another function in order to 
+# extend the behaviour of the wrapped function, without 
+# permanently modifying it
+
+
 # Private(like) attributes & methods
 '''
 conceptual implementation in python
