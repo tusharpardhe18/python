@@ -1,47 +1,35 @@
-# string is a data type in python
-# string is a sequence of characters enclosed in quotes
-# we can primarily write a string in these three ways
-
-a = 'harry'
-b = "harry"
-c = '''harry'''
-
-# string slicing
-# a string in python can be sliced for getting a part of the strings.
-
-# consider the following string:
+# Strings : 
 '''
-the index in a strings from 0 to (length-1) in python. 
-in order to slice to string, we use the following syntax:
+- strings are also like arrays, just arrays of characters
 
-sl = name[ind_start: ind_end]
-sl [0:3] returns "har" -> characters from 0 to 3
-sl [1:3] returns "ar" -> characters from 1 to 3
+s = "hello"
+print(s[1]) # e
 
-'''
+Key Things to Note:
+- strings are immutable in python - you can't change them in place.
+- so, modifying a string usually means creating a new string.
 
-nameshort = a[1:3]
-print(nameshort)
+Common Operations :
 
-''' 
-Negative Indices: Indices can also be used as shown int he figure above
--1 corresponds to the (length-1) index, -2 to (length-2)
-
-'''
-
-# Functions
-'''
-
-'''
+Length  -  len(s)
+Concatenation  -  s1 + s2
+Slicing  -  s[1:4]
+Reversing  -  s[::-1]
+Changing case  -  s.upper(), s.lower()
+Find substrings  -  'a' in s, s.find('lo')
+Count Letters  -  s.count('l')
 
 
-# Escape Sequence Characters
+When to use Arrays vs Strings :
 
-'''
-Sequence of characters after backslash "\" - Escape Sequence Characters
+- use arrays(lists) when you're dealing with numbers or objects and need mutability
 
-Escape Sequence characters comprise of more than one character but 
-represent one character when used within the strings.
+- use strings when you're working with text, patterns or sequences of characters
 
-example : \n, \t, \', \", \ etc.
+Summary :
+
+- Arrays are mutbable but strings are not
+- Both have O(1) time complexity while accessing them
+- Arrays are modifiable but we have to create new string if we want to chnage it
+- Array datatypes are numbers/objects and string datatypes are characters
 '''
