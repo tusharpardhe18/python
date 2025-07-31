@@ -34,7 +34,7 @@ arr[2] = 99
 4. Built-In Methods :
 
 - most used ones
-a. append(x)  -  add items tot he end
+a. append(x)  -  add items to the end
 b. insert(i, x)  -  insert x at index i
 c. pop()  -  remove last item
 d. remove(x)  -  remove first occurrence of x
