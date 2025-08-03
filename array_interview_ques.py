@@ -225,4 +225,19 @@ f=[1,2,4,5]
 n=int(input("enter range: "))
 print(findMissingNo(f))
 
+# Left & Right Array Rotation
 
+arr = [1,2,3,4,5,6,7]
+n = len(arr)
+k = 3
+i=0
+#rotate left
+arr[k:] = arr[k:][::-1]
+arr[i:] = arr[i:][::-1]
+arr[n-k:] = arr[n-k:][::-1]
+print(arr)
+
+#rotate right
+# arr[n-k:] = arr[n-k:][::-1]
+# arr[i:] = arr[i:][::-1]
+# arr[k:] = arr[k:][::-1]
